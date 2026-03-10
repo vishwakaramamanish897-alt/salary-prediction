@@ -21,7 +21,7 @@ Age = st.number_input("Enter your age",18,65)
 Gender = st.selectbox("select your gender",encoder["Gender"].classes_)
 Education = st.selectbox("select your enduction",encoder["Education Level"].classes_)
 job_title = st.selectbox("select your job title",encoder["Job Title"].classes_)
-experience = st,number_input("enter your experence(in year)",0,50)
+experience = st.number_input("enter your experence(in year)",0,50)
 
 
 df = pd.DataFame({
