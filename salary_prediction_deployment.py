@@ -20,7 +20,7 @@ st.title("salary prediction model")
 Age = st.number_input("Enter your age",18,65)
 Gender = st.selectbox("select your gender",encoder["Gender"].classes_)
 Education = st.selectbox("select your enduction",encoder["Education Level"].classes_)
-Job Title = st.selectbox("select your job title",encoder["Job Title"].classes_)
+job_title = st.selectbox("select your job title",encoder["Job Title"].classes_)
 Experience = st.number_input("enter your experience(in year)",0,50)
 
 
@@ -29,7 +29,7 @@ df = pd.DataFrame({
     "Gender":[Gender],
     "Education Level":[Education Level],
     "Job Title":[Job Title],
-    "Experience":[Experience]
+    "Years of Experience":[Experience]
 
 })
 
